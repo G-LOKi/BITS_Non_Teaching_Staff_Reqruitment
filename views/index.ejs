@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.form/4.2.1/jquery.form.min.js" integrity="sha384-tIwI8+qJdZBtYYCKwRkjxBGQVZS3gGozr3CtI+5JF/oL1JmPEHzCEnIKbDbLTCer" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+  <div align="ceter">
+    <h1 align="center">Non Teaching Staff Recruitment</h1>
+    <p>Fill the below details :</p>
+    <form action="/applied" enctype="multipart/form-data" method="post">
+
+      <input type="text" name="name" id="name"
+             placeholder="Name" required="required"/>
+      <input type="text" name="location" id="location"
+             placeholder="Location" required="required"/>
+      <input type="text" name="phoneno" id="phoneno"
+             placeholder="Phone No." required="required"/>
+      <br><br>
+
+      <input type="text" name="email" id="email"
+             placeholder="Email" required="required"/>
+      <input type="text" name="dob" id="dob"
+             placeholder="Date of Birth" required="required"/>
+      <input type="text" name="qualification" id="qualification"
+             placeholder="Qualification" required="required"/>
+      <br><br>
+
+      <input type="text" name="experience" id="experience"
+             placeholder="Experience (Total)" required="required"/>
+      <input type="text" name="currentemployer" id="currentemployer"
+             placeholder="Current Employer" required="required"/>
+      <input type="text" name="designation" id="designation"
+             placeholder="Designation" required="required"/>
+      <br><br>
+
+      <input type="text" name="lsw" id="lsw"
+             placeholder="Last Salary Withdrawn " required="required"/>
+      <input type="text" name="expectedsalary" id="expectedsalary"
+             placeholder="Expected Salary" required="required"/>
+      <textarea type="text" name="remarks" id="remarks"
+             placeholder="Remarks" required="required">Any other remarks?</textarea>
+      <br><br>
+
+      <input type="file" name="file"/>
+      <br>
+      <input type="submit" id="apply" value="apply"/>
+
+    </form>
+
+  </div>
+  </body>
+</html>
