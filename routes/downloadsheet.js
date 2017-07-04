@@ -1,7 +1,7 @@
 var express = require('express');
 var nodeExcel = require('excel-export');
 var router = express.Router();
-// var mysql = require("mysql");
+var mysql = require("mysql");
 
 
 module.exports =  function(req, res, next) {
