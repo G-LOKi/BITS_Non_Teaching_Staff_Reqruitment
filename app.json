@@ -1,0 +1,13 @@
+{
+  "name": "BITS_Non_Teaching_Staff_Reqruitment",
+  "description": "Testing app",
+  "scripts": {},
+  "env": {},
+  "formation": {},
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
