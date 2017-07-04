@@ -8,20 +8,71 @@ module.exports =  function(req, res, next) {
     var conf={};
 
 
-    conf.cols=[{
-        caption:'id',
-        type:'number',
-        width:3
-    },
+    conf.cols=[
         {
             caption:'name',
             type:'string',
-            width:50
+            width:100
         },
         {
-            caption:'age',
-            type:'number',
-            width:15
+            caption:'location',
+            type:'string',
+            width:100
+        },
+        {
+            caption:'phoneno',
+            type:'string',
+            width:100
+        },
+        {
+            caption:'email',
+            type:'string',
+            width:100
+        },
+        {
+            caption:'dob',
+            type:'string',
+            width:100
+        },
+        {
+            caption:'qualification',
+            type:'string',
+            width:100
+        },
+        {
+            caption:'experience',
+            type:'string',
+            width:100
+        },
+        {
+            caption:'currentemployer',
+            type:'string',
+            width:100
+        },
+        {
+            caption:'designation',
+            type:'string',
+            width:100
+        },
+        {
+            caption:'lsw',
+            type:'string',
+            width:100
+        },
+        {
+            caption:'expectedsallary',
+            type:'string',
+            width:100
+        },
+        {
+            caption:'remarks',
+            type:'string',
+            width:600
+        },
+        {
+            caption:'attach',
+            type:'string',
+            width:600
         }
     ];
 
@@ -35,12 +86,21 @@ module.exports =  function(req, res, next) {
     con.query("SELECT * FROM userinfo",function(err,rows) {
         arr = [];
         for (i = 0; i < rows.length; i++) {
-            id= rows[i].id;
-            name = rows[i].name;
-            age = rows[i].age;
-            a = [id,name,age];
+            name= rows[i].name;
+            location = rows[i].location;
+            phoneno = rows[i].phoneno;
+            email= rows[i].email;
+            dob = rows[i].dob;
+            qualification = rows[i].qualification;
+            experience = rows[i].experience;
+            currentemployer = rows[i].currentemployer;
+            designation = rows[i].designation;
+            lsw = rows[i].lsw;
+            expectedsalary = rows[i].expectedsalary;
+            remarks = rows[i].remarks;
+            attach = rows[i].attach;
+            a = [name,location,phoneno,email,dob,qualification,experience,currentemployer,designation,lsw,expectedsalary,remarks,attach];
             arr.push(a);
-
         }
         console.log(arr);
         conf.rows=arr;

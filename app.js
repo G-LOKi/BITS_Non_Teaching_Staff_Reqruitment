@@ -33,7 +33,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/applied', applied);
 app.use('/downloadsheet', downloadsheet);
-app.use('/uploads', express.static(path.join(__dirname + 'uploads')));
+app.use('/static', express.static('public'));
 
 
 // catch 404 and forward to error handler
