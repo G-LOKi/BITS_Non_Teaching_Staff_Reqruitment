@@ -15,5 +15,6 @@
     "serve-favicon": "~2.3.2",
     "multer": "^1.2.0",
     "excel-export": "0.5.1",
-    "mysql" : "2.13.0"
+    "mysql" : "2.13.0",
+    "multiparty" : "4.1.3"
   }}
