@@ -8,7 +8,7 @@ var flag;
 
 var Storage = multer.diskStorage({
     destination: function(req, file, callback) {
-        callback(null, "./uploads");
+        callback(null, "./public/uploads");
     },
     filename: function(req, file, callback) {
         flag=file.fieldname + "_" + Date.now() + "_" + file.originalname;
@@ -57,7 +57,7 @@ module.exports =  function(req, res, next) {
                 lsw: req.body.lsw,
                 expectedsalary: req.body.expectedsalary,
                 remarks: req.body.remarks,
-                link: "www.localhost:3000/uploads/"+flag
+                attach: "www.localhost:3000/public/uploads/"+flag
             };
 
 
