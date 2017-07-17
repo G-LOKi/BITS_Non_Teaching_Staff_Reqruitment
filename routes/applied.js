@@ -43,13 +43,14 @@ module.exports =  function(req, res, next) {
 
         //here you can read the appropriate fields/files
 
-        if(fields.name!=null){
+        if(fields!=null){
             var info = {
                 name: req.body.name,
                 location : req.body.location,
-                phoneno: req.body.phoneno,
+                mobileno: req.body.phoneno,
+                landline: req.body.stdno + "-" + req.body.landline,
                 email: req.body.email,
-                dob: req.body.dob,
+                dob: req.body.date,
                 qualification: req.body.qualification,
                 experience: req.body.experience,
                 currentemployer: req.body.currentemployer,
@@ -57,7 +58,7 @@ module.exports =  function(req, res, next) {
                 lsw: req.body.lsw,
                 expectedsalary: req.body.expectedsalary,
                 remarks: req.body.remarks,
-                attach: "www.localhost:3000/public/uploads/"+flag
+                attach: "www.localhost:8080/uploads/"+flag
             };
 
 

@@ -10,67 +10,73 @@ module.exports =  function(req, res, next) {
 
     conf.cols=[
         {
-            caption:'name',
+            caption:'Name',
             type:'string',
             width:100
         },
         {
-            caption:'location',
+            caption:'Location',
             type:'string',
             width:100
         },
         {
-            caption:'phoneno',
+            caption:'Mobile No.',
             type:'string',
             width:100
         },
         {
-            caption:'email',
+            caption:'Landline No.',
             type:'string',
             width:100
         },
         {
-            caption:'dob',
+            caption:'Email',
             type:'string',
             width:100
         },
         {
-            caption:'qualification',
+            caption:'Date of Birth',
+            type:'string',
+            width:100
+        },
+
+        {
+            caption:'Qualification',
             type:'string',
             width:100
         },
         {
-            caption:'experience',
+            caption:'Experience',
             type:'string',
             width:100
         },
         {
-            caption:'currentemployer',
+            caption:'Current Employer',
             type:'string',
             width:100
         },
         {
-            caption:'designation',
+            caption:'Designation',
             type:'string',
             width:100
         },
         {
-            caption:'lsw',
+            caption:'Last Salary Withdrawn',
             type:'string',
             width:100
         },
         {
-            caption:'expectedsallary',
+            caption:'Expected Salary',
             type:'string',
             width:100
         },
         {
-            caption:'remarks',
+            caption:'Remarks',
             type:'string',
             width:600
         },
         {
-            caption:'attach',
+            caption:'Resume Location',
             type:'string',
             width:600
         }
@@ -88,7 +94,8 @@ module.exports =  function(req, res, next) {
         for (i = 0; i < rows.length; i++) {
             name= rows[i].name;
             location = rows[i].location;
-            phoneno = rows[i].phoneno;
+            mobileno = rows[i].mobileno;
+            landline = rows[i].landline;
             email= rows[i].email;
             dob = rows[i].dob;
             qualification = rows[i].qualification;
@@ -99,7 +106,7 @@ module.exports =  function(req, res, next) {
             expectedsalary = rows[i].expectedsalary;
             remarks = rows[i].remarks;
             attach = rows[i].attach;
-            a = [name,location,phoneno,email,dob,qualification,experience,currentemployer,designation,lsw,expectedsalary,remarks,attach];
+            a = [name,location,mobileno,landline,email,dob,qualification,experience,currentemployer,designation,lsw,expectedsalary,remarks,attach];
             arr.push(a);
         }
         console.log(arr);
