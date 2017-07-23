@@ -75,9 +75,10 @@
       </div>
     </nav>
   <div align="center">
-    <h1 align="center">Non Teaching Staff Recruitment</h1>
-    <h2><small>Fill the following details :</small></h2>
-    <h4><small>Fields marked with * are mandatory. Use Chrome for best results.</small></h4>
+    <img src="../public/images/bits_logo.png" alt="BITS Pilani logo" style="height: 130px; width: 130px; float: left; margin-left: 30px;"/>
+    <h1 align="center" style="margin-right: 150px;">Job Application Form</h1>
+    <h2 style="margin-right: 150px;"><small>Fill the following details :</small></h2>
+    <h4 style="margin-right: 150px;"><small>Fields marked with * are mandatory. Use Google Chrome for best results.</small></h4>
   <div class="container">
     <form id="recruitment-form" action="/applied" enctype="multipart/form-data" method="post" data-toggle="validator" role="form">
 
@@ -131,11 +132,11 @@
 
       <div class="col-md-4">
       <div class="form-group has-feedback">
-      <label for="email" class="control-label">Email*</label>
+      <label for="email" class="control-label">Email</label>
       <div class="input-group">
       <span class="input-group-addon">@</span>
       <input class="form-control" type="email" name="email" id="email"
-             data-error="Invalid email address" required>
+             data-error="Invalid email address">
       <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
       </div>
       <div class="help-block with-errors"></div>
@@ -194,6 +195,13 @@
       <div class="form-group">
         <label for="designation" class="control-label">Designation</label>
       <input class="form-control" type="text" name="designation" id="designation"/>
+      </div>
+      </div>
+
+      <div class="col-md-4">
+      <div class="form-group">
+        <label for="position" class="control-label">Position applied for*</label>
+      <input class="form-control" type="text" name="position" id="position" required/>
       </div>
       </div>
 
